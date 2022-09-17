@@ -10,7 +10,8 @@ const DaysMonth=({allDays})=>{
         console.log(selectDay)
     }
     const dayNow=()=>{
-        console.log(selectDay,"/6/2022")
+        let date=new Date()
+        console.log(selectDay,"/6/2022"+" "+date.getHours()+"h")
     }
 
     const deleteNow=()=>{
