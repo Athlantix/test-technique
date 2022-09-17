@@ -13,6 +13,11 @@ const DaysMonth=({allDays})=>{
         console.log(selectDay,"/6/2022")
     }
 
+    const deleteNow=()=>{
+        let date=new Date()
+        console.log(date.getDate(),'/6/2022')
+    }
+
 
         return(
             <>
@@ -25,7 +30,7 @@ const DaysMonth=({allDays})=>{
                 <div>
                 
                     <button onClick={()=>dayNow()}>Schedule</button>
-                    <button >Cancel</button>
+                    <button onClick={()=>deleteNow()}>Cancel</button>
                 </div>
             </>
         )
